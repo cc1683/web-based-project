@@ -94,6 +94,52 @@ nav.bg-dark {
 			transform: translateX(-3px);
 			transition: .5s ease;
 }
+.img-wrapper {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 15px;
+  background-color: black;
+  position: relative;
+  color: white;
+}
+.img-wrapper img {
+  width: 100%;
+  max-width: 350px;
+  opacity: 0.5;
+  transition: all 300ms ease-in;
+}
+
+.img-wrapper img:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: transform 400ms;
+  cursor: pointer;
+}
+.caption {
+  font-size: 0.65em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: absolute;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-bottom: 1.5em;
+  cursor: pointer;
+}
+button.btn-info {
+  font-size: 0.5em;
+  position: absolute;
+  margin-top: 2em;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
 footer.page-footer {
   background: #333;
   color: #dedede;
@@ -103,6 +149,9 @@ footer.page-footer a {
 }
 footer.page-footer aside {
   color: #dedede;
+}
+.footer-copyright {
+  background: #000;
 }
 /* Media Query */
 @media (max-width: 600px) {
